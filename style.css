@@ -1,0 +1,224 @@
+/*
+**********************
+HEADER
+**********************
+*/
+
+#headerImage{
+    background-image: url(imgs/cool-change-bay.jpg);
+
+  /* Set a specific height */
+    height: 25vh;
+
+  /* Position and center the image to scale nicely on all screens */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 55%;
+    position: relative;
+}
+
+/*
+**********************
+navbar
+**********************
+*/
+
+header button#headerNavbarToggler{
+    background-color: rgb(235, 235, 235);
+    border: none;
+    margin: 0 auto;
+    display: block;
+    font-size: 25px;
+}
+
+header button#headerNavbarToggler div{
+    width: 35px;
+    height: 4px;
+    background-color: rgb(128, 128, 128);
+    margin: 6px 0;
+}
+
+header nav a{
+    color: #000000;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav{
+    background-color: rgba(235, 235, 235, 0.5);
+}
+
+#mobileNav{
+    display: none;
+}
+
+#mobileNav.navShow{
+    display: block;
+}
+
+#mainNav{
+    display: none;
+}
+
+header nav a.active{
+    color: #0000ff;
+    background-color: rgb(235, 235, 235);
+}
+
+header nav a:hover{
+    text-decoration: none;
+    background-color: rgb(240, 248, 255);
+}
+
+@media screen and (min-width: 576px){
+    header button#headerNavbarToggler{
+        display: none;
+    }
+
+    #mobileNav.navShow{
+        display: none;
+    }
+
+    #mainNav{
+        display: flex;
+    }
+
+    header nav a{
+        flex: 1 1 0;
+    }
+}
+
+/*
+**********************
+HEADER END
+**********************
+*/
+
+/*
+**********************
+FOOTER
+**********************
+*/
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+
+footer{
+    background-color: rgb(0, 255, 255);
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*
+**********************
+FOOTER END
+**********************
+*/
+
+/*
+**********************
+INDEX.HTML
+**********************
+*/
+
+body.index p{
+    width: 90%;
+    margin: 0 auto;
+}
+
+body.index h1, body.index h2{
+    text-align: center;
+}
+
+body.index ol{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+/*
+**********************
+INDEX.HTML END
+**********************
+*/
+
+
+/*
+**********************
+BOATS.HTML
+**********************
+*/
+
+main{
+    margin-top: 10px;
+}
+
+body.boats main .carousel-inner img{
+    width: 90vw;
+    margin: 0 auto;
+    display: block;
+}
+
+body.boats main a span.carousel-control-next-icon, body.boats main a span.carousel-control-prev-icon{
+    color: rgb(255, 255, 255);
+    background-image: none;
+    font-size: 200%;
+}
+
+body.boats main div.carousel a{
+    opacity: 1;
+}
+
+@media screen and (min-width: 576px){
+    body.boats main .carousel-inner img{
+        width: 40vw;
+    }
+    body.boats main a span.carousel-control-next-icon, body.boats main a span.carousel-control-prev-icon{
+        color: rgb(128, 128, 128);
+    }
+}
+
+body.boats main{
+    text-align: center;
+}
+
+body.boats main h1{
+    margin-top: 15px;
+}
+
+
+
+/*
+**********************
+BOATS.HTML END
+**********************
+*/
+
+/*
+**********************
+BAYS.HTML
+**********************
+*/
+
+body.bays main iframe{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+/*
+**********************
+BAYS.HTML END
+**********************
+*/
