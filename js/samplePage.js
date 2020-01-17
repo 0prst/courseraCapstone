@@ -39,4 +39,4 @@ document.getElementById("headerNavbarToggler").addEventListener("click", event =
     }
 });
 
-document.querySelector("footer").innerText = "This is a footer";
+//document.querySelector("footer").innerText = "This is a footer";

@@ -116,6 +116,10 @@ footer{
     height: 70px;
     margin-top: 10px;
     text-align: center;
+    background-image: url(imgs/phang_nga_bay.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*
